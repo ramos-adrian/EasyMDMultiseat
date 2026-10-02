@@ -7,6 +7,13 @@ el **multi-seat de logind**: asigna teclados, ratones, GPU y otros dispositivos 
 `seatN`, guarda las configuraciones como perfiles y cambia entre tu gestor de inicio
 normal y uno compatible con multi-seat.
 
+## Por qué existe este proyecto
+
+Al buscar multi-seat en Linux, la respuesta habitual es "usa `loginctl`", pero nadie explica
+que GDM de GNOME (el predeterminado en Ubuntu) no lo soporta, y no había una forma fácil y
+visual de hacerlo. Esta herramienta cubre ese hueco: detecta lo que le falta a tu sistema,
+te dice qué instalar y te deja asignar dispositivos con unos clics.
+
 ## Por qué puedes necesitar otro gestor de inicio
 
 GDM (el de GNOME, por ejemplo en Ubuntu) no puede ejecutar varios seats a la vez.
@@ -77,3 +84,7 @@ Ver [ARCHITECTURE.md](ARCHITECTURE.md) y los registros de decisiones en `ADR/`.
 
 Probado en Ubuntu con GDM → LightDM. Otras distribuciones y gestores de inicio no están
 probados; se agradecen reportes y pull requests.
+
+## Licencia
+
+GPL-3.0-or-later. Copyright (C) 2026 Adrian Ramos. Ver [LICENSE](LICENSE).

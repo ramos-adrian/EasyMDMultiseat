@@ -7,6 +7,13 @@ A GTK 4 / libadwaita app (plus a console menu) for Linux with systemd that manag
 save the layouts as presets, and switch between your normal display manager and a
 multi-seat capable one.
 
+## Why this project exists
+
+Searching online for multi-seat on Linux, the usual answer is "use `loginctl`", but nobody
+explains that GNOME's GDM (the default on Ubuntu) does not support it, and there was no
+easy, visual way to do it. This tool exists to fill that gap: it detects what your system
+is missing, tells you what to install, and lets you assign devices with a few clicks.
+
 ## Why you may need another display manager
 
 GDM (the default in GNOME, e.g. Ubuntu) cannot run several seats at once. **LightDM**
@@ -78,3 +85,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) and the decision records in `ADR/` (writt
 
 Tested on Ubuntu with GDM → LightDM. Other display managers and distributions are
 untested; reports and pull requests are welcome.
+
+## License
+
+GPL-3.0-or-later. Copyright (C) 2026 Adrian Ramos. See [LICENSE](LICENSE).
