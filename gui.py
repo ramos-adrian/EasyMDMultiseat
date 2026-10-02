@@ -752,7 +752,7 @@ class MultiseatWindow(Adw.ApplicationWindow):
 class MultiseatApp(Adw.Application):
     def __init__(self):
         super().__init__(
-            application_id="io.github.multiseat_manager.MultiseatManager",
+            application_id="io.github.ramos_adrian.EasyMDMultiseat",
             flags=Gio.ApplicationFlags.FLAGS_NONE
         )
 
