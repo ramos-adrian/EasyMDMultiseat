@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Multi-Seat Manager
+Name[es]=Gestor Multi-Seat
+GenericName=Seat Manager
+GenericName[es]=Gestor de Asientos Múltiples
+Comment=Manage peripherals, seat profiles and the display manager for Multi-Seat
+Comment[es]=Administra periféricos, perfiles de asiento y gestor de inicio para Multi-Seat
+Exec=@APPDIR@/multiseat_manager.py --gui
+Icon=preferences-desktop-display
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+Keywords=multiseat;seat;lightdm;sddm;gdm;devices;loginctl;
+StartupNotify=true

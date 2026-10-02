@@ -1,0 +1,744 @@
+# Template translation for multiseat-manager
+msgid ""
+msgstr ""
+"Project-Id-Version: multiseat-manager\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: core.py:220 core.py:225
+msgid "Graphics Card / Display"
+msgstr ""
+
+#: core.py:225
+msgid "Display Output ({name})"
+msgstr ""
+
+#: core.py:259
+msgid "Display / Graphics"
+msgstr ""
+
+#: core.py:261 core.py:274
+msgid "Audio / Microphone"
+msgstr ""
+
+#: core.py:263 core.py:276
+msgid "Camera / Video"
+msgstr ""
+
+#: core.py:265
+msgid "Network"
+msgstr ""
+
+#: core.py:268 core.py:252
+msgid "Keyboard"
+msgstr ""
+
+#: core.py:270 core.py:254
+msgid "Graphics Tablet"
+msgstr ""
+
+#: core.py:272 core.py:256
+msgid "Mouse / Pointer"
+msgstr ""
+
+#: core.py:278
+msgid "USB Device"
+msgstr ""
+
+#: core.py:279
+msgid "System / Other"
+msgstr ""
+
+#: core.py:393 multiseat_manager.py:99
+msgid "No multi-seat capable display manager found. Install LightDM (or SDDM)."
+msgstr ""
+
+#: core.py:398
+msgid "{dm} enabled, other display managers disabled."
+msgstr ""
+
+#: core.py:402 multiseat_manager.py:124
+msgid "No normal display manager found (GDM, SDDM...)."
+msgstr ""
+
+#: core.py:404
+msgid "{dm} enabled, seats reset to seat0."
+msgstr ""
+
+#: core.py:511 core.py:544 multiseat_manager.py:89
+msgid "Invalid seat name: {seat}"
+msgstr ""
+
+#: core.py:627
+msgid "Cannot modify {path}: {error}"
+msgstr ""
+
+#: core.py:628
+msgid "The preset does not exist"
+msgstr ""
+
+#: gui.py:121
+msgid "Search device by name, type or path..."
+msgstr ""
+
+#: gui.py:126
+msgid "Reset everything to Seat 0"
+msgstr ""
+
+#: gui.py:139
+msgid "Seat 0 (Main)"
+msgstr ""
+
+#: gui.py:151
+msgid "Add a new seat"
+msgstr ""
+
+#: gui.py:169
+msgid "Discard"
+msgstr ""
+
+#: gui.py:210
+msgid "{seat} created. Move devices to it to activate it."
+msgstr ""
+
+#: gui.py:238 gui.py:242
+msgid "{n} devices"
+msgstr ""
+
+#: gui.py:245
+msgid "No devices assigned to {seat}"
+msgstr ""
+
+#: gui.py:246
+msgid "Assign devices from Seat 0 or apply a profile."
+msgstr ""
+
+#: gui.py:257
+msgid "{n} pending change(s) — nothing is applied until you confirm"
+msgstr ""
+
+#: gui.py:269
+msgid "Pending: {src} → {dst}"
+msgstr ""
+
+#: gui.py:280
+msgid "Undo"
+msgstr ""
+
+#: gui.py:286
+msgid "To {seat}"
+msgstr ""
+
+#: gui.py:30 gui.py:59 multiseat_manager.py:343
+msgid "Multi-Seat Manager"
+msgstr ""
+
+#: gui.py:324
+msgid "Apply {n} change(s)?"
+msgstr ""
+
+#: gui.py:325
+msgid "Devices will be reassigned to: {seats}. This changes the real seat configuration."
+msgstr ""
+
+#: gui.py:328 gui.py:353 gui.py:467 gui.py:503 gui.py:537 gui.py:664 gui.py:691 gui.py:717
+msgid "Cancel"
+msgstr ""
+
+#: gui.py:329 gui.py:165
+msgid "Apply changes"
+msgstr ""
+
+#: gui.py:340 multiseat_manager.py:188
+msgid "Changes applied"
+msgstr ""
+
+#: gui.py:342
+msgid "Some changes could not be applied"
+msgstr ""
+
+#: gui.py:350
+msgid "Reset all seats?"
+msgstr ""
+
+#: gui.py:351
+msgid "All devices assigned to other seats will return to the main seat, seat0."
+msgstr ""
+
+#: gui.py:354
+msgid "Reset"
+msgstr ""
+
+#: gui.py:363
+msgid "All devices have returned to Seat 0"
+msgstr ""
+
+#: gui.py:366
+msgid "Error"
+msgstr ""
+
+#: gui.py:382
+msgid "Save selected seat as new profile"
+msgstr ""
+
+#: gui.py:388
+msgid "Profiles store the main devices assigned to the seat chosen in the Devices tab."
+msgstr ""
+
+#: gui.py:407
+msgid "Saved Profiles"
+msgstr ""
+
+#: gui.py:409
+msgid "{n} profile(s) available in {path}"
+msgstr ""
+
+#: gui.py:416
+msgid "No saved profiles"
+msgstr ""
+
+#: gui.py:417
+msgid "Assign devices to a seat and click 'Save selected seat as new profile'."
+msgstr ""
+
+#: gui.py:427
+msgid "{n} main device(s) • {seat}"
+msgstr ""
+
+#: gui.py:430
+msgid "Apply"
+msgstr ""
+
+#: gui.py:438
+msgid "Delete this profile"
+msgstr ""
+
+#: gui.py:457
+msgid "{seat} is empty"
+msgstr ""
+
+#: gui.py:458
+msgid "First assign the desired devices to the seat in the 'Devices' tab before creating a profile."
+msgstr ""
+
+#: gui.py:464
+msgid "Save New Profile"
+msgstr ""
+
+#: gui.py:465
+msgid "{n} main device(s) of {seat} will be saved."
+msgstr ""
+
+#: gui.py:468
+msgid "Save"
+msgstr ""
+
+#: gui.py:473
+msgid "E.g. Two Players Setup, Secondary Desk..."
+msgstr ""
+
+#: gui.py:481
+msgid "Invalid profile name"
+msgstr ""
+
+#: gui.py:487
+msgid "Profile '{name}' saved"
+msgstr ""
+
+#: gui.py:490
+msgid "Error saving profile"
+msgstr ""
+
+#: gui.py:499
+msgid "Apply profile '{name}'?"
+msgstr ""
+
+#: gui.py:500
+msgid "{n} device(s) will be assigned to {seat}."
+msgstr ""
+
+#: gui.py:501
+msgid "Do you also want to prepare the system with a multi-seat display manager?"
+msgstr ""
+
+#: gui.py:504
+msgid "Only Assign Devices"
+msgstr ""
+
+#: gui.py:505
+msgid "Assign and Reboot"
+msgstr ""
+
+#: gui.py:517
+msgid "Profile '{name}' could not be fully applied"
+msgstr ""
+
+#: gui.py:519
+msgid "Profile '{name}' applied ({n} devices)"
+msgstr ""
+
+#: gui.py:526 gui.py:678
+msgid "Error enabling Multi-Seat"
+msgstr ""
+
+#: gui.py:534
+msgid "Delete profile '{name}'?"
+msgstr ""
+
+#: gui.py:535
+msgid "This action cannot be undone."
+msgstr ""
+
+#: gui.py:538
+msgid "Delete"
+msgstr ""
+
+#: gui.py:54
+msgid "Refresh devices and status"
+msgstr ""
+
+#: gui.py:545
+msgid "Profile '{name}' deleted"
+msgstr ""
+
+#: gui.py:548
+msgid "Error deleting profile"
+msgstr ""
+
+#: gui.py:560
+msgid "Current System Status"
+msgstr ""
+
+#: gui.py:563
+msgid "Display Manager"
+msgstr ""
+
+#: gui.py:567
+msgid "Seats Configured in systemd"
+msgstr ""
+
+#: gui.py:572
+msgid "Operating Mode"
+msgstr ""
+
+#: gui.py:575 gui.py:659
+msgid "Enable Multi-Seat Mode"
+msgstr ""
+
+#: gui.py:577
+msgid "Enable Multi-Seat"
+msgstr ""
+
+#: gui.py:585 gui.py:686
+msgid "Restore Normal Mode"
+msgstr ""
+
+#: gui.py:587
+msgid "Restore Normal"
+msgstr ""
+
+#: gui.py:595
+msgid "Session and Reboot Actions"
+msgstr ""
+
+#: gui.py:599
+msgid "Reboot the System"
+msgstr ""
+
+#: gui.py:60
+msgid "Loading system status..."
+msgstr ""
+
+#: gui.py:600
+msgid "Cleanly applies all hardware and graphics driver changes."
+msgstr ""
+
+#: gui.py:619
+msgid "Multi-Seat Mode"
+msgstr ""
+
+#: gui.py:619
+msgid "Standard Mode"
+msgstr ""
+
+#: gui.py:621
+msgid "{mode} (boot: {enabled}, running: {running})"
+msgstr ""
+
+#: gui.py:625
+msgid "Configured for boot: {enabled} • Running: {running}"
+msgstr ""
+
+#: gui.py:632
+msgid "Multi-seat needs a display manager that can run several desktops at once. Detected: {multi}. Normal mode uses: {normal}."
+msgstr ""
+
+#: gui.py:634
+msgid "none installed"
+msgstr ""
+
+#: gui.py:635
+msgid "none"
+msgstr ""
+
+#: gui.py:639
+msgid "Enables {dm} and disables the other display managers. Seat 0 and the other seats can log in simultaneously."
+msgstr ""
+
+#: gui.py:643
+msgid "Install LightDM or SDDM to use this mode."
+msgstr ""
+
+#: gui.py:648
+msgid "Enables {dm}, disables {multi} and returns all devices to Seat 0."
+msgstr ""
+
+#: gui.py:652
+msgid "No normal display manager found."
+msgstr ""
+
+#: gui.py:660
+msgid "This will configure {dm} for the next boot and disable the other display managers."
+msgstr ""
+
+#: gui.py:661
+msgid "Your current session will stay open so you can save your work."
+msgstr ""
+
+#: gui.py:662
+msgid "Apply the change now?"
+msgstr ""
+
+#: gui.py:665
+msgid "Apply and Continue"
+msgstr ""
+
+#: gui.py:666
+msgid "Apply and Reboot Now"
+msgstr ""
+
+#: gui.py:673
+msgid "Multi-Seat mode configured for next boot"
+msgstr ""
+
+#: gui.py:687
+msgid "All devices will be reset to Seat 0 (loginctl flush-devices) and {dm} will be set as the display manager."
+msgstr ""
+
+#: gui.py:689
+msgid "Do you want to continue?"
+msgstr ""
+
+#: gui.py:692
+msgid "Restore and Continue"
+msgstr ""
+
+#: gui.py:693
+msgid "Restore and Reboot"
+msgstr ""
+
+#: gui.py:701
+msgid "Normal configuration restored"
+msgstr ""
+
+#: gui.py:706
+msgid "Error restoring configuration"
+msgstr ""
+
+#: gui.py:714
+msgid "Reboot the computer?"
+msgstr ""
+
+#: gui.py:715
+msgid "The system will reboot immediately. Make sure you have saved all your work."
+msgstr ""
+
+#: gui.py:718 gui.py:603
+msgid "Reboot Now"
+msgstr ""
+
+#: gui.py:74
+msgid "Devices"
+msgstr ""
+
+#: gui.py:749
+msgid "Devices and status refreshed"
+msgstr ""
+
+#: gui.py:75
+msgid "Profiles"
+msgstr ""
+
+#: gui.py:76
+msgid "Settings"
+msgstr ""
+
+#: gui.py:88
+msgid "OK"
+msgstr ""
+
+#: multiseat_manager.py:102
+msgid "This will enable {dm} and disable the other display managers to allow multiple desktops."
+msgstr ""
+
+#: multiseat_manager.py:104 multiseat_manager.py:129
+msgid "Do you want to continue? (y/N): "
+msgstr ""
+
+#: multiseat_manager.py:107
+msgid "Applying configuration..."
+msgstr ""
+
+#: multiseat_manager.py:110
+msgid "Configuration applied successfully."
+msgstr ""
+
+#: multiseat_manager.py:111 multiseat_manager.py:136
+msgid "Reboot the system now? (y/N): "
+msgstr ""
+
+#: multiseat_manager.py:112 multiseat_manager.py:137
+msgid "Rebooting..."
+msgstr ""
+
+#: multiseat_manager.py:115 multiseat_manager.py:272
+msgid "Error configuring Multi-Seat: {error}"
+msgstr ""
+
+#: multiseat_manager.py:121
+msgid "Restore Normal Configuration"
+msgstr ""
+
+#: multiseat_manager.py:127
+msgid "This will enable {dm}, disable the multi-seat display manager and return all devices to seat0."
+msgstr ""
+
+#: multiseat_manager.py:132
+msgid "Restoring configuration..."
+msgstr ""
+
+#: multiseat_manager.py:135
+msgid "Normal configuration restored successfully."
+msgstr ""
+
+#: multiseat_manager.py:140
+msgid "Error restoring: {error}"
+msgstr ""
+
+#: multiseat_manager.py:146
+msgid "Assign Devices to a Seat"
+msgstr ""
+
+#: multiseat_manager.py:155
+msgid "Assign Devices to {seat}"
+msgstr ""
+
+#: multiseat_manager.py:156
+msgid "Devices currently on seat0:"
+msgstr ""
+
+#: multiseat_manager.py:160
+msgid "No devices found on seat0 or the query failed."
+msgstr ""
+
+#: multiseat_manager.py:171
+msgid "{n} pending change(s) → {seat} (not applied yet)"
+msgstr ""
+
+#: multiseat_manager.py:172
+msgid "Number = mark/unmark device | a = apply | c = clear | 0 = back"
+msgstr ""
+
+#: multiseat_manager.py:174
+msgid "Your choice: "
+msgstr ""
+
+#: multiseat_manager.py:176
+msgid "Discard the pending changes? (y/N): "
+msgstr ""
+
+#: multiseat_manager.py:183
+msgid "Nothing to apply."
+msgstr ""
+
+#: multiseat_manager.py:185
+msgid "Applying changes..."
+msgstr ""
+
+#: multiseat_manager.py:192
+msgid "Error: {error}"
+msgstr ""
+
+#: multiseat_manager.py:204
+msgid "Invalid option."
+msgstr ""
+
+#: multiseat_manager.py:211
+msgid "Profile (Preset) Manager"
+msgstr ""
+
+#: multiseat_manager.py:212
+msgid "1. Save the current state of a seat as a new profile"
+msgstr ""
+
+#: multiseat_manager.py:213
+msgid "2. Apply a profile"
+msgstr ""
+
+#: multiseat_manager.py:214
+msgid "3. View saved profiles"
+msgstr ""
+
+#: multiseat_manager.py:215
+msgid "4. Delete a profile"
+msgstr ""
+
+#: multiseat_manager.py:216
+msgid "5. Back"
+msgstr ""
+
+#: multiseat_manager.py:218 multiseat_manager.py:328
+msgid "Select an option (1-5): "
+msgstr ""
+
+#: multiseat_manager.py:228
+msgid "No devices are currently assigned to {seat}."
+msgstr ""
+
+#: multiseat_manager.py:231
+msgid "Main devices on {seat} to save ({n}):"
+msgstr ""
+
+#: multiseat_manager.py:234
+msgid "Enter a name for the profile (empty to cancel): "
+msgstr ""
+
+#: multiseat_manager.py:239
+msgid "Profile '{name}' saved successfully."
+msgstr ""
+
+#: multiseat_manager.py:241
+msgid "Error saving: {error}"
+msgstr ""
+
+#: multiseat_manager.py:245 multiseat_manager.py:276 multiseat_manager.py:288
+msgid "No saved profiles."
+msgstr ""
+
+#: multiseat_manager.py:249
+msgid "Available profiles:"
+msgstr ""
+
+#: multiseat_manager.py:251
+msgid "{i}. {name} ({count} devices → {seat})"
+msgstr ""
+
+#: multiseat_manager.py:253 multiseat_manager.py:294
+msgid "0. Cancel"
+msgstr ""
+
+#: multiseat_manager.py:255
+msgid "Select a profile to apply (0-{n}): "
+msgstr ""
+
+#: multiseat_manager.py:264
+msgid "Profile '{name}' applied with errors: {error}"
+msgstr ""
+
+#: multiseat_manager.py:266
+msgid "Profile '{name}' applied ({n} devices)."
+msgstr ""
+
+#: multiseat_manager.py:267
+msgid "Enable the multi-seat display manager and reboot now? (y/N): "
+msgstr ""
+
+#: multiseat_manager.py:280
+msgid "({count} devices → {seat}):"
+msgstr ""
+
+#: multiseat_manager.py:296
+msgid "Select a profile to delete (0-{n}): "
+msgstr ""
+
+#: multiseat_manager.py:301
+msgid "Are you sure you want to delete '{name}'? (y/N): "
+msgstr ""
+
+#: multiseat_manager.py:304
+msgid "Profile deleted."
+msgstr ""
+
+#: multiseat_manager.py:322
+msgid "1. Enable Multi-Seat Mode"
+msgstr ""
+
+#: multiseat_manager.py:323
+msgid "2. Manually assign devices to a seat"
+msgstr ""
+
+#: multiseat_manager.py:324
+msgid "3. Manage Profiles / Presets"
+msgstr ""
+
+#: multiseat_manager.py:325
+msgid "4. Restore Normal Configuration (and flush seats)"
+msgstr ""
+
+#: multiseat_manager.py:326
+msgid "5. Exit"
+msgstr ""
+
+#: multiseat_manager.py:344
+msgid "Force the GTK4/Libadwaita graphical interface"
+msgstr ""
+
+#: multiseat_manager.py:345
+msgid "Force the interactive console menu"
+msgstr ""
+
+#: multiseat_manager.py:346
+msgid "Interface language (en, es)"
+msgstr ""
+
+#: multiseat_manager.py:357
+msgid "[Warning] Could not initialize the graphical interface ({error})."
+msgstr ""
+
+#: multiseat_manager.py:358
+msgid "Starting in interactive terminal mode..."
+msgstr ""
+
+#: multiseat_manager.py:56
+msgid "Press Enter to continue..."
+msgstr ""
+
+#: multiseat_manager.py:61
+msgid "y"
+msgstr ""
+
+#: multiseat_manager.py:70
+msgid "Multi-Seat"
+msgstr ""
+
+#: multiseat_manager.py:70
+msgid "Normal"
+msgstr ""
+
+#: multiseat_manager.py:73
+msgid "Boot mode: {mode} ({dm}) | Running: {running}"
+msgstr ""
+
+#: multiseat_manager.py:82
+msgid "Existing seats: {seats}"
+msgstr ""
+
+#: multiseat_manager.py:83
+msgid "Target seat (Enter = {default}, 'new' = next free): "
+msgstr ""
+
+#: multiseat_manager.py:96
+msgid "Enable Multi-Seat Configuration"
+msgstr ""
