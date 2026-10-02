@@ -1,4 +1,4 @@
-# Multi-Seat Manager
+# EasyMDMultiseat
 
 [Read in English](README.md)
 

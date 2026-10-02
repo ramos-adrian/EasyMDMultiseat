@@ -1,4 +1,4 @@
-# Multi-Seat Manager
+# EasyMDMultiseat
 
 Herramienta para Linux con systemd que administra multi-seat de logind: asigna periféricos a cualquier `seatN`, guarda perfiles (presets) y cambia entre el display manager normal (GDM, SDDM...) y uno multi-seat (LightDM/SDDM), detectados automáticamente. Interfaz en inglés/español (gettext).
 

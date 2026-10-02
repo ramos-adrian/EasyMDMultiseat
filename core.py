@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Multi-Seat Manager - Core logic module
+EasyMDMultiseat - Core logic module
 Handles loginctl parsing, hardware discovery, device categorization, presets,
 seat management and display manager configuration.
 

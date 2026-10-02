@@ -140,8 +140,8 @@ msgid "To {seat}"
 msgstr "A {seat}"
 
 #: gui.py:30 gui.py:59 multiseat_manager.py:344
-msgid "Multi-Seat Manager"
-msgstr "Gestor Multi-Seat"
+msgid "EasyMDMultiseat"
+msgstr "EasyMDMultiseat"
 
 #: gui.py:324
 msgid "Apply {n} change(s)?"

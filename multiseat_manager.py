@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Multi-Seat Manager
+EasyMDMultiseat
 Smart universal launcher:
 - Graphical session detected (Wayland/X11) or --gui: opens the GTK 4 / Libadwaita interface.
 - Terminal/SSH without graphics, or --cli: opens the interactive console menu.
@@ -341,7 +341,7 @@ def _run_cli_loop():
 
 
 def main():
-    parser = argparse.ArgumentParser(description=_("Multi-Seat Manager"))
+    parser = argparse.ArgumentParser(description=_("EasyMDMultiseat"))
     parser.add_argument("--gui", action="store_true", help=_("Force the GTK4/Libadwaita graphical interface"))
     parser.add_argument("--cli", action="store_true", help=_("Force the interactive console menu"))
     parser.add_argument("--lang", metavar="LANG", help=_("Interface language (en, es)"))

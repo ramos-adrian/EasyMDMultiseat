@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Multi-Seat Manager - Modern GTK 4 / Libadwaita Interface
+EasyMDMultiseat - Modern GTK 4 / Libadwaita Interface
 """
 
 import sys
@@ -27,7 +27,7 @@ def make_row(title, subtitle=None):
 class MultiseatWindow(Adw.ApplicationWindow):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.set_title(_("Multi-Seat Manager"))
+        self.set_title(_("EasyMDMultiseat"))
         self.set_default_size(1020, 680)
 
         # State
@@ -56,7 +56,7 @@ class MultiseatWindow(Adw.ApplicationWindow):
         self.header_bar.pack_start(refresh_btn)
 
         self.title_widget = Adw.WindowTitle(
-            title=_("Multi-Seat Manager"),
+            title=_("EasyMDMultiseat"),
             subtitle=_("Loading system status...")
         )
         self.header_bar.set_title_widget(self.title_widget)

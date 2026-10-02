@@ -140,7 +140,7 @@ msgid "To {seat}"
 msgstr ""
 
 #: gui.py:30 gui.py:59 multiseat_manager.py:344
-msgid "Multi-Seat Manager"
+msgid "EasyMDMultiseat"
 msgstr ""
 
 #: gui.py:324
