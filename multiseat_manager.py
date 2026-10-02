@@ -96,7 +96,8 @@ def cli_enable_multiseat():
     print("\033[1;33m=== " + _("Enable Multi-Seat Configuration") + " ===\033[0m")
     dm = core.get_multiseat_dm()
     if not dm:
-        print("\033[1;31m" + _("No multi-seat capable display manager found. Install LightDM (or SDDM).") + "\033[0m")
+        print("\033[1;31m" + _("No multi-seat capable display manager found.") + "\033[0m")
+        print(core.multiseat_install_hint())
         pause()
         return
     print(_("This will enable {dm} and disable the other display managers to allow multiple desktops.").format(

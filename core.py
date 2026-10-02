@@ -39,6 +39,14 @@ DM_LABELS = {
     "sddm": "SDDM", "lxdm": "LXDM", "xdm": "XDM",
 }
 
+# How to install the preferred multi-seat DM, keyed by os-release ID / ID_LIKE.
+INSTALL_COMMANDS = (
+    (("debian", "ubuntu"), ["apt", "install", "lightdm"]),
+    (("fedora", "rhel", "centos"), ["dnf", "install", "lightdm"]),
+    (("arch",), ["pacman", "-S", "lightdm"]),
+    (("suse", "opensuse"), ["zypper", "install", "lightdm"]),
+)
+
 MAIN_SEAT = "seat0"
 SEAT_RE = re.compile(r'^seat[A-Za-z0-9_-]+$')
 
@@ -339,6 +347,33 @@ def get_active_display_manager():
     return {"enabled": get_enabled_display_manager(), "running": running}
 
 
+def _os_release_ids():
+    """IDs from /etc/os-release (ID plus ID_LIKE), lowercase."""
+    ids = []
+    try:
+        for line in Path("/etc/os-release").read_text().splitlines():
+            key, _sep, value = line.partition("=")
+            if key in ("ID", "ID_LIKE"):
+                ids += value.strip().strip('"\'').lower().split()
+    except OSError:
+        pass
+    return ids
+
+
+def multiseat_install_hint():
+    """
+    Explains why a multi-seat display manager is needed and, when the distribution
+    is recognised, the command to install LightDM. Never installs anything itself.
+    """
+    ids = _os_release_ids()
+    for names, argv in INSTALL_COMMANDS:
+        if any(n in ids for n in names):
+            return _("GDM cannot run several seats at once; LightDM and SDDM can. "
+                     "Install LightDM with: {command}").format(command=shlex.join(["sudo"] + argv))
+    return _("GDM cannot run several seats at once; LightDM and SDDM can. "
+             "Install one of them with your package manager.")
+
+
 def get_multiseat_dm():
     """Display manager used for multi-seat mode (user setting, else auto-detected), or None."""
     installed = installed_display_managers()
@@ -390,7 +425,7 @@ def set_multiseat_enabled(enable=True):
     if enable:
         target = get_multiseat_dm()
         if not target:
-            return False, _("No multi-seat capable display manager found. Install LightDM (or SDDM).")
+            return False, _("No multi-seat capable display manager found.") + " " + multiseat_install_hint()
         current = get_enabled_display_manager()
         if current not in ("unknown", target):
             update_settings(normal_dm=current)

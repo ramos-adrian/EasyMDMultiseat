@@ -640,7 +640,7 @@ class MultiseatWindow(Adw.ApplicationWindow):
                     dm=core.dm_label(multi_dm))
             )
         else:
-            self.row_enable_multi.set_subtitle(_("Install LightDM or SDDM to use this mode."))
+            self.row_enable_multi.set_subtitle(core.multiseat_install_hint())
         self.btn_enable.set_sensitive(multi_dm is not None)
 
         if normal_dm:
