@@ -125,7 +125,7 @@ class MultiseatWindow(Adw.ApplicationWindow):
 
         flush_btn = Gtk.Button(label=_("Reset everything to Seat 0"))
         flush_btn.set_icon_name("edit-undo-symbolic")
-        flush_btn.add_css_class("flat")
+        flush_btn.add_css_class("destructive-action")
         flush_btn.connect("clicked", self.on_flush_devices_clicked)
         filter_box.append(flush_btn)
         page_box.append(filter_box)

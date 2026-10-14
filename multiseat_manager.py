@@ -117,6 +117,20 @@ def cli_enable_multiseat():
     pause()
 
 
+def cli_reset_to_seat0():
+    print_banner()
+    print("\033[1;33m=== " + _("Return all devices to Seat 0") + " ===\033[0m")
+    print(_("All devices assigned to other seats will return to the main seat, seat0."))
+    if not yes(input("\n" + _("Do you want to continue? (y/N): "))):
+        return
+    ok, msg = core.flush_all_seats()
+    if ok:
+        print("\033[1;32m✓ " + _("All devices have returned to Seat 0") + "\033[0m")
+    else:
+        print("\033[1;31m✗ " + _("Error: {error}").format(error=msg) + "\033[0m")
+    pause()
+
+
 def cli_restore_normal():
     print_banner()
     print("\033[1;33m=== " + _("Restore Normal Configuration") + " ===\033[0m")
@@ -324,9 +338,10 @@ def _run_cli_loop():
         print(_("2. Manually assign devices to a seat"))
         print(_("3. Manage Profiles / Presets"))
         print(_("4. Restore Normal Configuration (and flush seats)"))
-        print(_("5. Exit"))
+        print(_("5. Return all devices to Seat 0"))
+        print(_("6. Exit"))
 
-        choice = input("\n" + _("Select an option (1-5): ")).strip()
+        choice = input("\n" + _("Select an option (1-6): ")).strip()
         if choice == '1':
             cli_enable_multiseat()
         elif choice == '2':
@@ -336,6 +351,8 @@ def _run_cli_loop():
         elif choice == '4':
             cli_restore_normal()
         elif choice == '5':
+            cli_reset_to_seat0()
+        elif choice == '6':
             clear_screen()
             return
 
